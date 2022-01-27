@@ -16,6 +16,7 @@
       "externalConsole": true,
       "MIMode": "gdb",
       "miDebuggerPath": "C:\\mingw64\\bin\\gdb.exe",
+      "jdkpath" : "C:\\Program Files\\Java\\jdk-11.0.2\\bin",
       "setupCommands": [
         {
           "description": "gdb에 자동 서식 지정 사용",
