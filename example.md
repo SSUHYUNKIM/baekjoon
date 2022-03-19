@@ -121,3 +121,71 @@ display 속성은 설치한 웹 을 실행할때 브라우저 처럼 보일지 �
 |minimul-ui|fullscreen 과 비슷하지만 뒤로가기, 새로고침등 최소한의 영역만 제공합니다.(모바일 크롬 전용)|
 
 ### orientation
+
+앱이 실행될때 가로, 세로 의 방향을 선택할 수 있습니다. 해당 옵션은 선택사항이므로 고정해야하는 상황이 아니라면 사용하지 않으셔도 됩니다.
+
+```javascript
+"display": "standalone"
+```
+
+### icons
+
+홈화면에 추가하면 생길때 사용할 아이콘을 설정하는 옵션입니다. 설정한 아이콘 이미지들은 앱 실행, 작업 전환, 스플래시 화면 등의 장소에 사용하게 됩니다. 아이콘의 사이즈는 48px 단위로 제공해야 합니다.
+
+```javascript
+"icons": [
+    {
+      "src": "/images/icons-vector.svg",
+      "type": "image/svg+xml",
+      "sizes": "512x512"
+    },
+    {
+      "src": "/images/icons-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ]
+```
+
+safari 브라우저에서는 이를 지원하지 않아 head 에 다음과 같은 태그를 추가하여 브라우징 이슈를 해결합니다.
+
+```html
+<link rel="apple-touch-icon" sizes="192x192" href="/images/icons/icon-192x192.png">
+<link rel="apple-touch-icon" sizes="512x512" href="/images/icons/icon-512x512.png">
+```
+
+### start_url
+
+홈화면에 설치한 앱을 시작할때 처음에 시작할 위치를 지정합니다.
+
+```javascript
+"start_url": "/?source=pwa"
+```
+
+theme_color
+
+상단부의 테마 부분의 색상을 지정할 수 있습니다. 해당 색상은 Hex 로 지정합니다.
+
+```javascript
+"theme_color": "#3367D6"
+```
+
+### background_color
+
+웹이 처음 시작될때 splashScreen 에서 사용하기 위해 사용됩니다. 값으로는 hex 값을 넣어줄 수 있습니다.
+
+```javascript
+"background_color": "#3367D6"
+```
+
+## PWA는 어떻게 설정하는가?
+
+여러분이 직접 간단한 PWA를 만들어 볼 수 있는 리소스들은 많이 있습니다. 직접 시도해보면, 개발 과정에 대한 감각을 얻을 수 있을 것입니다. 구글은 자신들의 [웹 데브(web-dev)](https://web.dev/progressive-web-apps/) 사이트에 PWA에 대해서 쉽게 따라 해 볼 수 있는 훌륭한 교육자료들을 많이 올려놓고 있습니다. [모질라(Mozilla)](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps)는 PWA 개발에 대한 방대한 문서들을 갖고 있습니다. [마이크로소프트](https://docs.microsoft.com/ko-kr/microsoft-edge/progressive-web-apps-chromium/) 역시 PWA 개발과 관련한 문서들을 풍부하게 보유하고 있습니다. 마이크로소프트는 또한 [PWA빌더(PWABuilder)](https://www.pwabuilder.com/)라는 도구도 만들었는데, 이걸 이용하면 여러분의 사이트를 PWA로 바꿀 수 있습니다. 물론 [워드프레스(WordPress)](https://wordpress.org/plugins/pwa/)의 플러그인을 이용해서 PWA를 만드는 방법도 있습니다. 또한, 구글은 워드프레스의 코어(Core)에서 PWA를 기본적으로 지원하기 위해서 작업을 하고 있습니다.
+
+---
+
+## Reference
+
+[프로그레시브 웹 앱(PWA)이란 무엇이며, 왜 필요한가?](https://blog.wishket.com/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%A0%88%EC%8B%9C%EB%B8%8C-%EC%9B%B9-%EC%95%B1pwa%EC%9D%B4%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B4%EB%A9%B0-%EC%99%9C-%ED%95%84%EC%9A%94%ED%95%9C%EA%B0%80/)
+[[PWA] 모바일에서 네이티브 앱 경험을 제공하는 Progressive Web Apps](https://codepathfinder.com/entry/PWA-%EB%AA%A8%EB%B0%94%EC%9D%BC%EC%97%90%EC%84%9C-%EB%84%A4%EC%9D%B4%ED%8B%B0%EB%B8%8C-%EC%95%B1-%EA%B2%BD%ED%97%98%EC%9D%84-%EC%A0%9C%EA%B3%B5%ED%95%98%EB%8A%94-Progressive-Web-Apps)
+[PWA 적용해보기 - manifest 적용](https://blog.woolta.com/categories/3/posts/150)
