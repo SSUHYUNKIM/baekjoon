@@ -2,9 +2,8 @@
 layout: post
 title:  "PWA(Progressive Web App)란?"
 authors: [SSUHYUNKIM]
-tags: ["Web"]
+tags: ["Web" , "PWA"]
 image: assets/images/post-progressive-web-app/cover.png
-description: "progressive web app"
 featured: true
 ---
 ## INTRO
@@ -182,7 +181,9 @@ safari 브라우저에서는 이를 지원하지 않아 head 에 다음과 같�
 
 여러분이 직접 간단한 PWA를 만들어 볼 수 있는 리소스들은 많이 있습니다. 직접 시도해보면, 개발 과정에 대한 감각을 얻을 수 있을 것입니다. 구글은 자신들의 [웹 데브(web-dev)](https://web.dev/progressive-web-apps/) 사이트에 PWA에 대해서 쉽게 따라 해 볼 수 있는 훌륭한 교육자료들을 많이 올려놓고 있습니다. [모질라(Mozilla)](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps)는 PWA 개발에 대한 방대한 문서들을 갖고 있습니다. [마이크로소프트](https://docs.microsoft.com/ko-kr/microsoft-edge/progressive-web-apps-chromium/) 역시 PWA 개발과 관련한 문서들을 풍부하게 보유하고 있습니다. 마이크로소프트는 또한 [PWA빌더(PWABuilder)](https://www.pwabuilder.com/)라는 도구도 만들었는데, 이걸 이용하면 여러분의 사이트를 PWA로 바꿀 수 있습니다. 물론 [워드프레스(WordPress)](https://wordpress.org/plugins/pwa/)의 플러그인을 이용해서 PWA를 만드는 방법도 있습니다. 또한, 구글은 워드프레스의 코어(Core)에서 PWA를 기본적으로 지원하기 위해서 작업을 하고 있습니다.
 
----
+## 마치며
+
+
 
 ## Reference
 
