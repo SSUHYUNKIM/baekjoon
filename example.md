@@ -93,7 +93,7 @@ featured: true
 ### name, short_name
 
 * name
-  * 웹을 설치하게 되면 icon에 표시되는 이름입니다.
+  * 웹을 설치하게 되면 `icon`에 표시되는 이름입니다.
 
 * short_name
   * 사용자의 홈 화면 이나 `name` 을 보여주기에는 제한적인 장소에서 표시되는 이름입니다.
@@ -162,7 +162,7 @@ safari 브라우저에서는 이를 지원하지 않아 `head`에 다음과 같�
 
 ### theme_color
 
-상단부의 테마 부분의 색상을 지정할 수 있습니다. 해당 색상은 `Hex`로 지정합니다.
+상단부의 테마 부분의 색상을 지정할 수 있습니다. 해당 색상은 `hex`로 지정합니다.
 
 ```JSON
 "theme_color": "#3367D6"
@@ -170,7 +170,7 @@ safari 브라우저에서는 이를 지원하지 않아 `head`에 다음과 같�
 
 ### background_color
 
-웹이 처음 시작될때 `splashScreen` 에서 사용하기 위해 사용됩니다. 값으로는 hex 값을 넣어줄 수 있습니다.
+웹이 처음 시작될때 `splashScreen` 에서 사용하기 위해 사용됩니다. 값으로는 `hex` 값을 넣어줄 수 있습니다.
 
 ```JSON
 "background_color": "#3367D6"
@@ -182,12 +182,14 @@ safari 브라우저에서는 이를 지원하지 않아 `head`에 다음과 같�
 
 ## 마치며
 
-
+이번 주제를 찾으면서 하루에도 얼마나 많이 '로그인'을 하는지 깨닫게 되었습니다.
+우리는 일상적으로 어떤 웹사이트에 로그인하지만 그만큼 굉장히 중요한 일이기도 합니다.
+또한 로그인 기능 구현이 생각보다 쉽지 않은 일이라는 것을 배웠습니다. 개념을 찾아보며 이해하는 것부터 쉽지 않았고 말로 표현하는 것은 더더욱 어려운 일이었습니다. 그렇지만 이렇게 이해한 것이 나중에 로그인 기능을 직접 구현할 때 굉장히 좋은 기반으로 작용할 것이라고 확신합니다!
 
 ## Reference
 
-[프로그레시브 웹 앱(PWA)이란 무엇이며, 왜 필요한가?](https://blog.wishket.com/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%A0%88%EC%8B%9C%EB%B8%8C-%EC%9B%B9-%EC%95%B1pwa%EC%9D%B4%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B4%EB%A9%B0-%EC%99%9C-%ED%95%84%EC%9A%94%ED%95%9C%EA%B0%80/)
+- [프로그레시브 웹 앱(PWA)이란 무엇이며, 왜 필요한가?](https://blog.wishket.com/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%A0%88%EC%8B%9C%EB%B8%8C-%EC%9B%B9-%EC%95%B1pwa%EC%9D%B4%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B4%EB%A9%B0-%EC%99%9C-%ED%95%84%EC%9A%94%ED%95%9C%EA%B0%80/)
 
-[[PWA] 모바일에서 네이티브 앱 경험을 제공하는 Progressive Web Apps](https://codepathfinder.com/entry/PWA-%EB%AA%A8%EB%B0%94%EC%9D%BC%EC%97%90%EC%84%9C-%EB%84%A4%EC%9D%B4%ED%8B%B0%EB%B8%8C-%EC%95%B1-%EA%B2%BD%ED%97%98%EC%9D%84-%EC%A0%9C%EA%B3%B5%ED%95%98%EB%8A%94-Progressive-Web-Apps)
+- [[PWA] 모바일에서 네이티브 앱 경험을 제공하는 Progressive Web Apps](https://codepathfinder.com/entry/PWA-%EB%AA%A8%EB%B0%94%EC%9D%BC%EC%97%90%EC%84%9C-%EB%84%A4%EC%9D%B4%ED%8B%B0%EB%B8%8C-%EC%95%B1-%EA%B2%BD%ED%97%98%EC%9D%84-%EC%A0%9C%EA%B3%B5%ED%95%98%EB%8A%94-Progressive-Web-Apps)
 
-[PWA 적용해보기 - manifest 적용](https://blog.woolta.com/categories/3/posts/150)
+- [PWA 적용해보기 - manifest 적용](https://blog.woolta.com/categories/3/posts/150)
