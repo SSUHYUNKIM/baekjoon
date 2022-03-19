@@ -93,3 +93,31 @@ PWA는 점점 더 인기를 얻고 있으며, 대기업의 웹사이트들도 **
 ```
 
 ### name, short_name
+
+* name
+  * 웹을 설치하게 되면 icon에 표시되는 이름입니다.
+
+* short_name
+  * 사용자의 홈 화면 이나 name 을 보여주기에는 제한적인 장소에서 표시되는 이름입니다.
+
+```javascript
+"short_name": "Weather",
+"name": "Weather: Do I need an umbrella?"
+```
+
+### display
+
+display 속성은 설치한 웹 을 실행할때 브라우저 처럼 보일지 앱처럼 보일지 아에 전체화면으로 보일지 등의 대한 설정을 할 수 있습니다. 속성 옵션으로는 fullscreen, minimul-ui, standalone, browser 가 있습니다. 보통 특별한 경우가 아니라면 standalone 을 사용합니다.
+
+```javascript
+"display": "standalone"
+```
+
+|속성|설명|
+|------|---|
+|browser|일반 브라우저와 동일하게 보입니다.|
+|standalone|다른 앱들처럼 최상단에 상태표시줄을 제외한 전체화면으로 보입니다.|
+|fullscreen|상태표시줄도 제외한 전체화면으로 보여줍니다.(ex 게임)|
+|minimul-ui|fullscreen 과 비슷하지만 뒤로가기, 새로고침등 최소한의 영역만 제공합니다.(모바일 크롬 전용)|
+
+### orientation
