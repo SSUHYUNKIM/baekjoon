@@ -77,7 +77,7 @@ featured: true
 
 * **HTTPS**
   * **PWA**는 `HTTPS`를 전제로한 기술입니다.
-    * 신뢰할 수 있는 연결 상태에서만 동작하기 때문에, 보안 연결을 통해서 서비스를 제공해야 합니다. 이건 단지 보안상의 이유 때문만은 아니고, 사용자들의 신뢰를 얻기 위해서도 아주 중요한 부분입니다.
+  * 신뢰할 수 있는 연결 상태에서만 동작하기 때문에, 보안 연결을 통해서 서비스를 제공해야 합니다. 이건 단지 보안상의 이유 때문만은 아니고, 사용자들의 신뢰를 얻기 위해서도 아주 중요한 부분입니다.
 
 * **service worker(서비스 작업자)**
   * 서비스 작업자는 백그라운드에서 실행되는 스크립트입니다.
@@ -155,7 +155,11 @@ featured: true
 
 ### icons
 
-홈화면에 추가하면 생길때 사용할 아이콘을 설정하는 옵션입니다. 설정한 아이콘 이미지들은 앱 실행, 작업 전환, 스플래시 화면 등의 장소에 사용하게 됩니다. 아이콘의 사이즈는 48px 단위로 제공해야 합니다.
+홈화면에 추가하면 생길때 사용할 아이콘을 설정하는 옵션입니다.
+
+설정한 아이콘 이미지들은 앱 실행, 작업 전환, 스플래시 화면 등의 장소에 사용하게 됩니다.
+
+아이콘의 사이즈는 48px 단위로 제공해야 합니다.
 
 ```JSON
 "icons": [ 
@@ -172,7 +176,7 @@ featured: true
   ]
 ```
 
-safari 브라우저에서는 이를 지원하지 않아 `head`에 다음과 같은 태그를 추가하여 브라우징 이슈를 해결합니다.
+safari 브라우저에서는 이를 지원하지 않아 `head`에 다음과 같은 태그를 추가하여 브라우징 이슈를 해결할 수 있습니다.
 
 ```html
 <link rel="apple-touch-icon" sizes="192x192" href="/images/icons/icon-192x192.png">
@@ -205,9 +209,23 @@ safari 브라우저에서는 이를 지원하지 않아 `head`에 다음과 같�
 
 ## PWA는 어떻게 설정하는가?
 
-여러분이 직접 간단한 **PWA**를 만들어 볼 수 있는 리소스들은 많이 있습니다. 직접 시도해보면, 개발 과정에 대한 감각을 얻을 수 있을 것입니다. 구글은 자신들의 [웹 데브(web-dev)](https://web.dev/progressive-web-apps/) 사이트에 PWA에 대해서 쉽게 따라 해 볼 수 있는 훌륭한 교육자료들을 많이 올려놓고 있습니다. [모질라(Mozilla)](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps)는 PWA 개발에 대한 방대한 문서들을 갖고 있습니다. [마이크로소프트](https://docs.microsoft.com/ko-kr/microsoft-edge/progressive-web-apps-chromium/) 역시 PWA 개발과 관련한 문서들을 풍부하게 보유하고 있습니다. 마이크로소프트는 또한 [PWA빌더(PWABuilder)](https://www.pwabuilder.com/)라는 도구도 만들었는데, 이걸 이용하면 여러분의 사이트를 PWA로 바꿀 수 있습니다. 물론 [워드프레스(WordPress)](https://wordpress.org/plugins/pwa/)의 플러그인을 이용해서 PWA를 만드는 방법도 있습니다. 또한, 구글은 워드프레스의 코어(Core)에서 PWA를 기본적으로 지원하기 위해서 작업을 하고 있습니다.
+여러분이 직접 간단한 **PWA**를 만들어 볼 수 있는 리소스들은 많이 있습니다. 직접 시도해보면, 개발 과정에 대한 감각을 얻을 수 있을 것입니다. 
+
+구글은 자신들의 [웹 데브(web-dev)](https://web.dev/progressive-web-apps/) 사이트에 PWA에 대해서 쉽게 따라 해 볼 수 있는 훌륭한 교육자료들을 많이 올려놓고 있습니다.
+
+[모질라(Mozilla)](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps)는 PWA 개발에 대한 방대한 문서들을 갖고 있습니다.
+
+[마이크로소프트](https://docs.microsoft.com/ko-kr/microsoft-edge/progressive-web-apps-chromium/) 역시 PWA 개발과 관련한 문서들을 풍부하게 보유하고 있습니다.
+
+마이크로소프트는 또한 [PWA빌더(PWABuilder)](https://www.pwabuilder.com/)라는 도구도 만들었는데, 이걸 이용하면 여러분의 사이트를 PWA로 바꿀 수 있습니다.
+
+[워드프레스(WordPress)](https://wordpress.org/plugins/pwa/)의 플러그인을 이용해서 PWA를 만드는 방법도 있습니다.
+
+또한, 구글은 워드프레스의 코어(Core)에서 PWA를 기본적으로 지원하기 위해서 작업을 하고 있습니다.
 
 ## 마치며
+
+2022년 웹 개발 트렌드라는 글을 보고 처음 이 주제에 대해 알게되었습니다.
 
 이번 주제를 찾으면서 하루에도 얼마나 많이 '로그인'을 하는지 깨닫게 되었습니다.
 우리는 일상적으로 어떤 웹사이트에 로그인하지만 그만큼 굉장히 중요한 일이기도 합니다.
