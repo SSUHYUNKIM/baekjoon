@@ -66,7 +66,7 @@ featured: true
 
 ## manifest.json
 
-```javascript
+```JSON
 {
   "short_name": "Weather",
   "name": "Weather: Do I need an umbrella?",
@@ -98,7 +98,7 @@ featured: true
 * short_name
   * 사용자의 홈 화면 이나 `name` 을 보여주기에는 제한적인 장소에서 표시되는 이름입니다.
 
-```javascript
+```JSON
 "short_name": "Weather",
 "name": "Weather: Do I need an umbrella?"
 ```
@@ -107,7 +107,7 @@ featured: true
 
 `display` 속성은 설치한 웹 을 실행할때 브라우저 처럼 보일지 앱처럼 보일지 아에 전체화면으로 보일지 등의 대한 설정을 할 수 있습니다. 속성 옵션으로는 `fullscreen`, `minimul-ui`, `standalone`, `browser` 가 있습니다. 보통 특별한 경우가 아니라면 `standalone` 을 사용합니다.
 
-```javascript
+```JSON
 "display": "standalone"
 ```
 
@@ -122,7 +122,7 @@ featured: true
 
 앱이 실행될때 가로, 세로 의 방향을 선택할 수 있습니다. 해당 옵션은 선택사항이므로 고정해야하는 상황이 아니라면 사용하지 않으셔도 됩니다.
 
-```javascript
+```JSON
 "display": "standalone"
 ```
 
@@ -130,8 +130,8 @@ featured: true
 
 홈화면에 추가하면 생길때 사용할 아이콘을 설정하는 옵션입니다. 설정한 아이콘 이미지들은 앱 실행, 작업 전환, 스플래시 화면 등의 장소에 사용하게 됩니다. 아이콘의 사이즈는 48px 단위로 제공해야 합니다.
 
-```javascript
-"icons": [
+```JSON
+"icons": [ 
     {
       "src": "/images/icons-vector.svg",
       "type": "image/svg+xml",
@@ -156,7 +156,7 @@ safari 브라우저에서는 이를 지원하지 않아 `head`에 다음과 같�
 
 홈화면에 설치한 앱을 시작할때 처음에 시작할 위치를 지정합니다.
 
-```javascript
+```JSON
 "start_url": "/?source=pwa"
 ```
 
@@ -164,7 +164,7 @@ safari 브라우저에서는 이를 지원하지 않아 `head`에 다음과 같�
 
 상단부의 테마 부분의 색상을 지정할 수 있습니다. 해당 색상은 `Hex`로 지정합니다.
 
-```javascript
+```JSON
 "theme_color": "#3367D6"
 ```
 
@@ -172,7 +172,7 @@ safari 브라우저에서는 이를 지원하지 않아 `head`에 다음과 같�
 
 웹이 처음 시작될때 `splashScreen` 에서 사용하기 위해 사용됩니다. 값으로는 hex 값을 넣어줄 수 있습니다.
 
-```javascript
+```JSON
 "background_color": "#3367D6"
 ```
 
