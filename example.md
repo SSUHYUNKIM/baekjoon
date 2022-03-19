@@ -162,7 +162,7 @@ safari 브라우저에서는 이를 지원하지 않아 head 에 다음과 같�
 "start_url": "/?source=pwa"
 ```
 
-theme_color
+### theme_color
 
 상단부의 테마 부분의 색상을 지정할 수 있습니다. 해당 색상은 Hex 로 지정합니다.
 
@@ -187,5 +187,7 @@ theme_color
 ## Reference
 
 [프로그레시브 웹 앱(PWA)이란 무엇이며, 왜 필요한가?](https://blog.wishket.com/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%A0%88%EC%8B%9C%EB%B8%8C-%EC%9B%B9-%EC%95%B1pwa%EC%9D%B4%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B4%EB%A9%B0-%EC%99%9C-%ED%95%84%EC%9A%94%ED%95%9C%EA%B0%80/)
+
 [[PWA] 모바일에서 네이티브 앱 경험을 제공하는 Progressive Web Apps](https://codepathfinder.com/entry/PWA-%EB%AA%A8%EB%B0%94%EC%9D%BC%EC%97%90%EC%84%9C-%EB%84%A4%EC%9D%B4%ED%8B%B0%EB%B8%8C-%EC%95%B1-%EA%B2%BD%ED%97%98%EC%9D%84-%EC%A0%9C%EA%B3%B5%ED%95%98%EB%8A%94-Progressive-Web-Apps)
+
 [PWA 적용해보기 - manifest 적용](https://blog.woolta.com/categories/3/posts/150)
