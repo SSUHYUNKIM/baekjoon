@@ -65,7 +65,7 @@
     {
       "type": "cppbuild",
       "label": "C/C++: g++.exe 활성 파일 빌드",
-      "command": "C:/mingw64/bin/g++.exe",
+      "command": "C:/MinGW/bin/g++.exe",
       "args": [
         "-fdiagnostics-color=always",
         "-g",
@@ -74,7 +74,7 @@
         "${fileDirname}\\${fileBasenameNoExtension}.exe"
       ],
       "options": {
-        "cwd": "C:/mingw64/bin"
+        "cwd": "C:/MinGW/bin"
       },
       "problemMatcher": [
         "$gcc"
@@ -83,7 +83,7 @@
         "kind": "build",
         "isDefault": true
       },
-      "detail": "컴파일러: C:/mingw64/bin/g++.exe"
+      "detail": "컴파일러: C:/MinGW/bin/g++.exe"
     }
   ]
 }
