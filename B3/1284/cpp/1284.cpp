@@ -5,19 +5,26 @@ int main()
 {
   int n, number;
   int result = 1;
-  while (1){
+
+  while (1)
+  {
     cin >> n;
-    if (n == 0){
+    if (n == 0)
       break;
-    }
-    while (1){
-      if(n < 1){
+
+    while (1)
+    {
+      if(n < 1)
+      {
         cout << result << "\n";
         result = 1;
         break;
       }
+
       number = n % 10;
-      switch (number){
+
+      switch (number)
+      {
         case 0:
           result += 4;
           result++;
@@ -31,8 +38,10 @@ int main()
           result++;
           break;
       }
-        n /= 10;
+      
+      n /= 10;
     }
   }
+
   return 0;
 }

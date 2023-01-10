@@ -1,13 +1,15 @@
 #include <iostream>
 using namespace std;
 
-int main(){
+int main()
+{
   int n, usingtime, i;
   int y = 0;
   int m = 0;
   cin >> n;
 
-  for(i =0; i < n; i++){
+  for(i =0; i < n; i++)
+  {
     cin >> usingtime;
     y += ((usingtime / 30) + 1) * 10;
     m += ((usingtime / 60) + 1) * 15;

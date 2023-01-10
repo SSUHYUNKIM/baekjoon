@@ -1,17 +1,21 @@
 #include <iostream>
 using namespace std;
 
-int main(){
+int main()
+{
   int t, h, w, n, i, result;
   cin >> t;
-  for(i = 0; i < t; i++){
+
+  for(i = 0; i < t; i++)
+  {
     cin >> h >> w >> n;
-    if(n % h == 0){
+    if(n % h == 0)
       result = h * 100 + (n / h);
-    }
-    else {
-    result = (n % h) * 100 + (n / h + 1);
-      }
+    else 
+      result = (n % h) * 100 + (n / h + 1);
+
     cout << result << "\n";
   }
+
+  return 0;
 }
