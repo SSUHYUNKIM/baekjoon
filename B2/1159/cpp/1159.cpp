@@ -2,7 +2,9 @@
 #include <string>
 using namespace std;
 
-int main(){
+int main()
+{
+  ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
   int n, i;
   int check = 0;
   string name;
@@ -10,20 +12,23 @@ int main(){
 
   cin >> n;
 
-  for(i = 0; i < n; i++){
+  for(i = 0; i < n; i++)
+  {
     cin >> name;
     count[name[0] - 97]++;
   }
 
-  for(i = 0; i < 26; i++){
-    if(count[i] >= 5){
+  for(i = 0; i < 26; i++)
+  {
+    if(count[i] >= 5)
+    {
       check++;
       cout << char(i + 'a');
     }
   }
 
-  if(check == 0){
+  if(check == 0)
     cout << "PREDAJA";
-  }
+    
   return 0;
 }

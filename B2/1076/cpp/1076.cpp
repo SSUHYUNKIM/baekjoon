@@ -3,7 +3,9 @@
 
 using namespace std;
 
-int main(){
+int main()
+{
+  ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
   string color[10] = { "black", "brown", "red", "orange", "yellow", "green", "blue", "violet", "grey", "white" };
   int mul[10] = { 1, 10, 100, 1000, 10000, 100000, 1000000, 10000000, 100000000, 1000000000 };
   int i, j;
@@ -11,10 +13,13 @@ int main(){
   string input;
   int temp[3];
 
-  for(i = 0; i < 3; i++){
+  for(i = 0; i < 3; i++)
+  {
     cin >> input;
-    for (j = 0; j < 10; j++){
-      if(color[j] == input) temp[i] = j;
+    for (j = 0; j < 10; j++)
+    {
+      if(color[j] == input) 
+        temp[i] = j;
     }
   }
 

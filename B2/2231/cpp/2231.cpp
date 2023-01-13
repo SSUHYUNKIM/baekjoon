@@ -2,18 +2,22 @@
 using namespace std;
  
 int main() {
+    ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
     int n, tmp, result = 0, i, digit = 0;
     int temp, sum = 0;
     cin >> n;
     tmp = n;
 
-    while (tmp) {
+    while (tmp) 
+    {
         tmp /= 10;
         digit++;
     }
 
     tmp = n - digit * 9;
-    for (i = tmp; i <= n; i++) {
+
+    for (i = tmp; i <= n; i++) 
+    {
         temp = i;
         sum += temp;
         while (temp > 0) {
