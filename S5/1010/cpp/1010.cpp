@@ -1,18 +1,23 @@
 #include <iostream>
 using namespace std;
 
-double factorial(int n){
+double factorial(int n)
+{
   if(n == 0)
     return 1;
   return n * factorial(n - 1);
 }
 
-int main(){
+int main()
+{
+  ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
   int t, n, m, i;
   double result = 0;
+
   cin >> t;
 
-  for(i = 0; i < t; i++){
+  for(i = 0; i < t; i++)
+  {
     cin >> n >> m;
     result = factorial(m) / (factorial(n) * (factorial(m-n)));
     cout.precision(0);
