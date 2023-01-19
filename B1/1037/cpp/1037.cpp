@@ -16,5 +16,7 @@ int main()
     }
 
     sort(arr, arr + n);
+    
     cout << arr[0] * arr[n - 1];
+    return 0;
 }
