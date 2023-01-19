@@ -13,6 +13,5 @@ int main()
         result++;
 
     cout << result <<endl;
-
     return 0;
 }

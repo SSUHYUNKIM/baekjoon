@@ -23,6 +23,5 @@ int main()
 	}
 
     cout << result / n << endl;
-
     return 0;
 }
