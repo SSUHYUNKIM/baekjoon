@@ -17,7 +17,6 @@ int main()
         else
             alphabet[input[i] - 97]++;
     }
-
     for(int i = 0; i < 26; i++)
     {
         if(alphabet[i] > max)
@@ -29,7 +28,6 @@ int main()
         if(alphabet[i] == max)
             count++;
     }
-
     if(count > 1)
         cout << "?" << endl;
     else

@@ -7,6 +7,7 @@ int main()
   int input;
 
   cin >> input;
+
   if(input % 4 == 0)
   {
     if(input % 100 == 0 && input % 400 != 0)
@@ -16,5 +17,6 @@ int main()
   } 
   else
       cout << "0";
+      
   return 0;
 }

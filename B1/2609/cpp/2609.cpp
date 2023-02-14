@@ -3,7 +3,6 @@ using namespace std;
 
 int gcd(int a, int b) 
 {
-
     int c = a % b;
 
 	while (c != 0) 
@@ -12,8 +11,7 @@ int gcd(int a, int b)
 		b = c;
 		c = a % b;
 	}
-
-	return a;
+	return b;
 }
 
 int lcm(int a, int b) 
