@@ -4,14 +4,12 @@ using namespace std;
 int main()
 {
     ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
-    int a,b;
-    
+    int a, b;
+
     cin >> a >> b;
-    if (a > b)
-        cout << ">";
-    else if(a < b)
-        cout << "<";
-    else 
-        cout << "==";
+    cout << a * (b % 10) << "\n";
+    cout << a * (b % 100 / 10 ) << "\n";
+    cout << a * (b / 100) << "\n";
+    cout << a * b;
     return 0;
 }

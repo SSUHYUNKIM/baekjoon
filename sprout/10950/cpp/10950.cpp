@@ -1,10 +1,14 @@
 #include <iostream>
 using namespace std;
 
-int main(){
-    int t, a, b, i;
+int main()
+{
+    ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
+    int t, a, b;
+    
     cin >> t;
-    for(i = 0; i < t; i++){
+    for(int i = 0; i < t; i++)
+    {
         cin >> a >> b;
         cout << a + b << endl;
     }
