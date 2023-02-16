@@ -6,6 +6,7 @@ int main()
   ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
   string input;
   int n, i, j;
+
   cin >> n;
 
   for(i = 0; i < n; i++)
@@ -17,9 +18,9 @@ int main()
       if(input[j] == 'O'){
         result += score;
         score++;
-      } else{
+      } 
+      else
         score = 1;
-      }
     }
     cout << result << endl;
   }
