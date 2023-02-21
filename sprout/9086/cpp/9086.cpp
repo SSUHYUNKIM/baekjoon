@@ -2,13 +2,19 @@
 
 using namespace std;
 
-int main(){
+int main()
+{
+  ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
   int t, i;
-  cin >> t;
   string input;
-  for(i = 0; i < t; i++){
+
+  cin >> t;
+
+  for(i = 0; i < t; i++)
+  {
     cin >> input;
     cout << input[0] << input[input.length() - 1] << endl;
   }
+  
   return 0;
 }
