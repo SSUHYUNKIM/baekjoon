@@ -51,7 +51,8 @@
     "xstddef": "cpp",
     "xstring": "cpp",
     "xtr1common": "cpp",
-    "xutility": "cpp"
+    "xutility": "cpp",
+    "vector": "cpp"
   },
   "java.home": "C:\\Program Files\\Java\\jdk-11.0.2",
   "C_Cpp.errorSquiggles": "Disabled"
