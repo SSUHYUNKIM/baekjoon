@@ -4,11 +4,14 @@ using namespace std;
 int main()
 {
     ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
-    int a, b;
+    string input;
 
-    cin >> a >> b;
+    cin >> input;
 
-    cout << (a + b) / 2 << "\n";
-    cout << (a - b) / 2 << "\n";
+    for(int i = 2; i >= 0; i--)
+    {
+        cout << input[i];
+    }
+    
     return 0;
 }
