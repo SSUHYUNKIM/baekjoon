@@ -10,13 +10,13 @@ int main()
     cin >> b;
 
     if (a > 0 && b > 0)
-        cout << 1 << endl;
+        cout << 1 << "\n";
     else if (a < 0 && b > 0)
-        cout << 2 << endl;
+        cout << 2 << "\n";
     else if (a < 0 && b < 0)
-        cout << 3 << endl;
+        cout << 3 << "\n";
     else
-        cout << 4 << endl;
+        cout << 4 << "\n";
         
     return 0;
 }
