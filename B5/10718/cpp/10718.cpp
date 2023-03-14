@@ -4,14 +4,8 @@ using namespace std;
 int main()
 {
     ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
-    int n;
     
-    cin >> n;
-
-    for(int i = 1; i <= 9; i++)
-    {
-        cout << n << " * " << i << " = " << n * i << "\n";
-    } 
-    
+    cout << "강한친구 대한육군" << "\n";
+    cout << "강한친구 대한육군" << "\n";
     return 0;
 }

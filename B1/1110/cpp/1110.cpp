@@ -7,20 +7,20 @@ int main()
     int a, b, c, d;
     int num;
     int result;
-    int count=0;
+    int count = 0;
     
     cin >> num;
+
     result = num;
-    
-    while(1)
+    while(true)
     {
         a = num / 10;
         b = num % 10;
-        c = (a+b) % 10;
-        d = (b*10) + c;
+        c = (a + b) % 10;
+        d = (b * 10) + c;
         num = d;
         count++;
-        if(d==result) 
+        if(d == result) 
             break;
     }
 
