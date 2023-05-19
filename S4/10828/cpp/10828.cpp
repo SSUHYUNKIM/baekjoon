@@ -22,29 +22,29 @@ int main()
 		else if (command == "pop") 
         {
 			if (stack.empty())
-				cout << -1 << "\n";
+				cout << -1 << '\n';
 			else 
             {
-				cout << stack.top() << "\n";
+				cout << stack.top() << '\n';
 				stack.pop();
 			}
 		}
 		else if (command == "size") 
         {
-			cout << stack.size() << "\n";
+			cout << stack.size() << '\n';
 		}
 		else if (command == "empty")
         {
 			if (stack.empty())
-				cout << 1 << "\n";
+				cout << 1 << '\n';
 			else
-				cout << 0 << "\n";
+				cout << 0 << '\n';
 		}
 		else if (command == "top") {
 			if (stack.empty())
 				cout << -1 << endl;
 			else 
-				cout << stack.top() << "\n";
+				cout << stack.top() << '\n';
         }
     }
     return 0;

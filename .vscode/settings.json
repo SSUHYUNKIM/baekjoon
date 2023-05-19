@@ -54,7 +54,16 @@
     "xutility": "cpp",
     "vector": "cpp",
     "*.tcc": "cpp",
-    "functional": "cpp"
+    "functional": "cpp",
+    "cstdarg": "cpp",
+    "cwctype": "cpp",
+    "deque": "cpp",
+    "unordered_map": "cpp",
+    "memory_resource": "cpp",
+    "numeric": "cpp",
+    "random": "cpp",
+    "fstream": "cpp",
+    "sstream": "cpp"
   },
   "java.home": "C:\\Program Files\\Java\\jdk-11.0.2",
   "C_Cpp.errorSquiggles": "Disabled"
