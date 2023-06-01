@@ -8,6 +8,7 @@ int main()
     ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
     string n;
     int b, result = 0, count = 0;
+    
     cin >> n >> b;
 
     for (int i = n.length() - 1; i >= 0; i--) 
